@@ -1,3 +1,6 @@
+title: Hexo在Gitpage搭建博客步骤一览
+categories: Hexo
+---
 # Hexo在Gitpage搭建博客步骤一览 #
 
 > 基于SSH方式搭建
