@@ -216,8 +216,7 @@ leancloud_visitors:
   app_key: #<app_key>
 
 
-# Tencent analytics ID
-# tencent_analytics:
+
 
 
 
@@ -242,4 +241,4 @@ js: js
 images: images
 
 # Theme version
-version: 0.5.0
+version: 5.0.0
