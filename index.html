@@ -233,15 +233,143 @@
 
     
     
+
+    
       
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/02/01/HEXO搭建博客一览/" itemprop="url">
+                  未命名
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-02-01T15:46:52+08:00" content="2016-02-01">
+              2016-02-01
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/02/01/HEXO搭建博客一览/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/01/HEXO搭建博客一览/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
-        
-        
-        
       
 
       
-    
+        
+          
+            <h1 id="Hexo_u5728Gitpage_u642D_u5EFA_u535A_u5BA2_u6B65_u9AA4_u4E00_u89C8"><a href="#Hexo_u5728Gitpage_u642D_u5EFA_u535A_u5BA2_u6B65_u9AA4_u4E00_u89C8" class="headerlink" title="Hexo在Gitpage搭建博客步骤一览"></a>Hexo在Gitpage搭建博客步骤一览</h1><blockquote>
+<p>基于SSH方式搭建</p>
+</blockquote>
+<ul>
+<li>1：创建仓库github_username.github.io  （注意：这里需要 用户名.github.io）</li>
+<li>2: 本地创建文件夹和仓库同名<pre><code>mkdir github_username.github.io
+</code></pre></li>
+<li>3：使用gitbash进入文件夹<pre><code>cd github_username.github.io
+</code></pre></li>
+<li>4：执行<pre><code>npm install hexo
+hexo init
+npm install
+npm install hexo-deployer-git --save
+</code></pre></li>
+<li>5：修改_config.yml中的deploy参数<pre><code>deploy:
+  type: git
+  repo: git@github.com:github_username/github_username.github.io.git #SSH地址
+  branch: master #发布到master分支
+</code></pre></li>
+<li>6：启动ssh-agent<pre><code>eval $(ssh-agent -s)
+</code></pre></li>
+<li>7：添加SSH key到ssh-agent<pre><code>ssh-add ~/.ssh/id_rsa
+</code></pre></li>
+<li>8：初始化git并提交<pre><code>git init
+git checkout --orphan gh-pages #创建分支 下面所有步骤在该分支下完成
+git add .
+git commit -m &quot;first commit&quot;
+git remote add origin git@github.com:github_username/github_username.github.io.git
+git push -u origin ph-pages
+</code></pre></li>
+<li><p>9：执行</p>
+<pre><code>hexo generate -d    
+</code></pre><p>生成网站并部署到GitHub上</p>
+<hr>
+</li>
+</ul>
+<blockquote>
+<p>为什么之前很多人写了教程这里还要重新再写一次步骤</p>
+</blockquote>
+<p>  正因为网上很多教程踩了不少的坑，最后发现还是官方文档靠谱</p>
+<p>  <strong>问：按照网上正确的步骤创建好了工程并发布正确了为什么gitpage访问还是404？</strong></p>
+<p>  答：创建项目的名字必须是<code>用户名.github.io</code>这种结构</p>
+<p>  <strong>问：生成了SSH KEY Github上也配置好了，为什么PUSH的时候提示key没有授权？</strong></p>
+<p>  答：步骤6、7解决了以上问题</p>
+<p>  <strong>问：修改了HEXO主题为什么发布后没有变化？</strong></p>
+<p>  答：提交部署前先执行 <code>hexo clean</code></p>
+<hr>
+
+          
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
 
     
       
@@ -385,7 +513,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
