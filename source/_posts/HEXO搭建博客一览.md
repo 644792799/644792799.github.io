@@ -2,7 +2,7 @@ title: Hexo在Gitpage搭建博客步骤一览
 tags: [Hexo,Gitpage]
 ---
 # Hexo在Gitpage搭建博客步骤一览 #
-
+---
 > 基于SSH方式搭建
 
 * 1：创建仓库github_username.github.io  （注意：这里需要 用户名.github.io）
