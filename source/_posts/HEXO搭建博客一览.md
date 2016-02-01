@@ -1,5 +1,5 @@
 title: Hexo在Gitpage搭建博客步骤一览
-tags: Hexo,Gitpage
+tags: [Hexo,Gitpage]
 ---
 # Hexo在Gitpage搭建博客步骤一览 #
 
