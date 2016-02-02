@@ -6,13 +6,13 @@ define([], function(){
 
 		return {
 			show: function(){
-				$tipBox.removeClass("hide");
+				// $tipBox.removeClass("hide");
 			},
 			hide: function(){
-				$tipBox.addClass("hide");
+				// $tipBox.addClass("hide");
 			},
 			init: function(){
-				
+
 			}
 		}
 	})();
@@ -88,7 +88,7 @@ define([], function(){
 		});
 	}
 
-	
+
 
 	return {
 		init: function(){
