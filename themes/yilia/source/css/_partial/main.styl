@@ -158,6 +158,7 @@
 		.switch-wrap{
 			transition: transform .3s ease-in;
 			position: relative;
+			border: 1px solid #eee;
 		}
 	}
 	.turn-left{
@@ -165,7 +166,7 @@
 	}
 	.header-nav{
 		width: 100%;
-		position: absolute;
+		position: relative;
 		transition: transform .3s ease-in;
 		.social {
 			margin-right:15px;
@@ -264,23 +265,30 @@
 			}
 		}
 	}
+	#js-tagcloud{
+		min-height: 205px;
+		padding: 0 5px;
+	}
+	#js-aboutme{
+		min-height: 205px;
+	}
 	.switch-part{
 		width: 100%;
-		position: absolute;
+		*position: absolute;
 	}
 	.switch-part1{
 		left: 0;
 	}
 	.switch-part2{
-		left: 100%;
-		top: 20px;
+		*left: 100%;
+		padding-top: 20px;
 		overlay-x: hidden;
 		overflow-y: auto;
-		max-height: 200px;
+		max-height: 205px;
 	}
 	.switch-part3{
-		left: 200%;
-		top: 20px;
+		*left: 200%;
+		padding-top: 20px;
 		line-height: 30px;
 		.switch-friends-link{
 			margin-right: 9px;
@@ -293,7 +301,8 @@
 		}
 	}
 	.switch-part4{
-		left: 300%;
+		*left: 300%;
+		padding-top: 20px;
 		text-align: left;
 		line-height: 30px;
 	}

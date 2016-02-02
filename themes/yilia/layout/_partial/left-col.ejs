@@ -91,7 +91,7 @@
 				</section>
 
 				<%if(theme.tagcloud){%>
-				<section class="switch-part switch-part2">
+				<section class="switch-part switch-part2 hide">
 					<div class="widget tagcloud" id="js-tagcloud">
 						<%- tagcloud() %>
 					</div>
@@ -99,7 +99,7 @@
 				<%}%>
 
 				<%if(theme.friends && theme.friends.length != 0){%>
-				<section class="switch-part switch-part3">
+				<section class="switch-part switch-part3 hide">
 					<div id="js-friends">
 					<% for (var i in theme.friends){ %>
 			          <a target="_blank" class="main-nav-link switch-friends-link" href="<%- url_for(theme.friends[i]) %>"><%= i %></a>
@@ -110,9 +110,9 @@
 
 				<%if(theme.aboutme){%>
 				<%if(!theme.friends){%>
-				<section class="switch-part switch-part3">
+				<section class="switch-part switch-part3 hide">
 				<%}else{%>
-				<section class="switch-part switch-part4">
+				<section class="switch-part switch-part4 hide">
 				<%}%>
 					<div id="js-aboutme"><%=theme.aboutme%></div>
 				</section>
