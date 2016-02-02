@@ -564,6 +564,7 @@ a {
   -ms-transition: -ms-transform 0.3s ease-in;
   transition: transform 0.3s ease-in;
   position: relative;
+  border: 1px solid #eee;
 }
 #header .turn-left {
   -webkit-transform: translate(-100%, 0);
@@ -573,7 +574,7 @@ a {
 }
 #header .header-nav {
   width: 100%;
-  position: absolute;
+  position: relative;
   -webkit-transition: -webkit-transform 0.3s ease-in;
   -moz-transition: -moz-transform 0.3s ease-in;
   -ms-transition: -ms-transform 0.3s ease-in;
@@ -679,23 +680,30 @@ a {
 #header .header-nav .social a.mail:hover {
   border: 1px solid #006b98;
 }
+#header #js-tagcloud {
+  min-height: 205px;
+  padding: 0 5px;
+}
+#header #js-aboutme {
+  min-height: 205px;
+}
 #header .switch-part {
   width: 100%;
-  position: absolute;
+  *position: absolute;
 }
 #header .switch-part1 {
   left: 0;
 }
 #header .switch-part2 {
-  left: 100%;
-  top: 20px;
+  *left: 100%;
+  padding-top: 20px;
   overlay-x: hidden;
   overflow-y: auto;
-  max-height: 200px;
+  max-height: 205px;
 }
 #header .switch-part3 {
-  left: 200%;
-  top: 20px;
+  *left: 200%;
+  padding-top: 20px;
   line-height: 30px;
 }
 #header .switch-part3 .switch-friends-link {
@@ -709,7 +717,8 @@ a {
   color: #fff;
 }
 #header .switch-part4 {
-  left: 300%;
+  *left: 300%;
+  padding-top: 20px;
   text-align: left;
   line-height: 30px;
 }
@@ -1824,6 +1833,8 @@ pre .css ~ * .id {
   text-align: center;
   -webkit-border-radius: 3px;
   border-radius: 3px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   opacity: 0.7;
   position: relative;
   z-index: 99;
