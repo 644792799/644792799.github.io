@@ -7,32 +7,48 @@ tags: [Hexo,Gitpage]
 
 * 1：创建仓库github_username.github.io  （注意：这里需要 用户名.github.io）
 * 2: 本地创建文件夹和仓库同名
-      mkdir github_username.github.io
+```bash
+mkdir github_username.github.io
+```
 * 3：使用gitbash进入文件夹
-      cd github_username.github.io
+```bash
+cd github_username.github.io
+```
 * 4：执行
-      npm install hexo
-      hexo init
-      npm install
-      npm install hexo-deployer-git --save
+```bash
+npm install hexo
+hexo init
+npm install
+npm install hexo-deployer-git --save
+```
 * 5：修改_config.yml中的deploy参数
-      deploy:
-        type: git
-        repo: git@github.com:github_username/github_username.github.io.git #SSH地址
-        branch: master #发布到master分支
+```bash
+deploy:
+  type: git
+  repo: git@github.com:github_username/github_username.github.io.git #SSH地址
+  branch: master #发布到master分支
+```
 * 6：启动ssh-agent
-      eval $(ssh-agent -s)
+```bash
+eval $(ssh-agent -s)
+```
 * 7：添加SSH key到ssh-agent
-      ssh-add ~/.ssh/id_rsa
+```bash
+ssh-add ~/.ssh/id_rsa
+```
 * 8：初始化git并提交
-      git init
-      git checkout --orphan gh-pages #创建分支 下面所有步骤在该分支下完成
-      git add .
-      git commit -m "first commit"
-      git remote add origin git@github.com:github_username/github_username.github.io.git
-      git push -u origin ph-pages
+```bash
+git init
+git checkout --orphan gh-pages #创建分支 下面所有步骤在该分支下完成
+git add .
+git commit -m "first commit"
+git remote add origin git@github.com:github_username/github_username.github.io.git
+git push -u origin ph-pages
+```
 * 9：执行
-      hexo generate -d    
+```bash
+hexo generate -d
+```
   生成网站并部署到GitHub上
 
   ---

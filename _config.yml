@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: next
+theme: yilia
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
@@ -72,13 +72,13 @@ deploy:
   repo: git@github.com:644792799/644792799.github.io.git
   branch: master
 
-avatar: https://avatars1.githubusercontent.com/u/3723219?v=3&s=70
-duoshuo_shortname: CJay
-baidu_analytics: 9b47ae43c063776efa8c2c503def3cb5
-swiftype_key: vAj7e35nSQFksQt74uUc
-since: 2016
+#avatar: https://avatars1.githubusercontent.com/u/3723219?v=3&s=70
+#duoshuo_shortname: CJay
+#baidu_analytics: 9b47ae43c063776efa8c2c503def3cb5
+#swiftype_key: vAj7e35nSQFksQt74uUc
+#since: 2016
 
 #Social links
-social:
-  github: https://github.com/644792799
-  weibo: http://weibo.com/u/1683993322
+#social:
+  #github: https://github.com/644792799
+  #weibo: http://weibo.com/u/1683993322
