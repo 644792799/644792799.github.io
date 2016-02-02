@@ -35,8 +35,10 @@ define([], function(){
 		$(".icon-wrap").addClass("hide");
 		$(".icon-wrap").eq(idx).removeClass("hide");
 
-		$(".switch-part").addClass("hide");
-		$(".switch-part").eq(idx).removeClass("hide");
+		// $(".switch-part").addClass("hide");
+		// $(".switch-part").eq(idx).removeClass("hide");
+		$(".switch-part").slideUp();
+		$(".switch-part").eq(idx).slideDown();
 	}
 
 	var bind = function(){
