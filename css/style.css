@@ -695,6 +695,7 @@ a {
 }
 #header .switch-part3 {
   left: 200%;
+  top: 20px;
   line-height: 30px;
 }
 #header .switch-part3 .switch-friends-link {
@@ -1794,10 +1795,11 @@ pre .css ~ * .id {
   }
 }
 .switch-btn {
-  margin-left: 74px;
-  margin-top: 23px;
+  *margin-left: 74px;
+  *margin-top: 23px;
+  margin: 23px auto 0;
   position: relative;
-  width: 70px;
+  *width: 70px;
   text-align: center;
 }
 .switch-btn .tips-box {
@@ -1818,20 +1820,22 @@ pre .css ~ * .id {
   padding: 5px 8px 4px 8px;
   background-color: #000;
   color: #fff;
-  width: 80px;
+  *width: 80px;
   text-align: center;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  opacity: 0.8;
-  position: absolute;
+  opacity: 0.7;
+  position: relative;
   z-index: 99;
-  left: -13px;
+  *left: -13px;
 }
 .switch-btn .tips-box .tips-inner li {
-  padding: 4px 0;
+  padding: 4px 2px;
   cursor: pointer;
   font-size: 13px;
   color: #ddd;
+  display: inline;
+  text-align: center;
 }
 .switch-btn .tips-box .tips-inner li:hover {
   background: #111;
