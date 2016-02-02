@@ -61,7 +61,7 @@ hexo generate -d
 
   答：创建项目的名字必须是`用户名.github.io`这种结构
 
-  __问：生成了SSH KEY Github上也配置好了，为什么PUSH的时候提示key没有授权？__
+  __问：生成了SSH KEY Github上也配置好了，为什么deploy的时候提示key没有授权？__
 
   答：步骤6、7解决了以上问题
 
