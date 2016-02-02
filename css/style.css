@@ -681,11 +681,11 @@ a {
   border: 1px solid #006b98;
 }
 #header #js-tagcloud {
-  min-height: 205px;
+  min-height: 185px;
   padding: 0 5px;
 }
 #header #js-aboutme {
-  min-height: 205px;
+  min-height: 185px;
 }
 #header .switch-part {
   width: 100%;
