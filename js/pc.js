@@ -30,10 +30,13 @@ define([], function(){
 	var slide = function(idx){
 		var $wrap = $(".switch-wrap");
 		$wrap.css({
-			"transform": "translate(-"+idx*100+"%, 0 )"
+			// "transform": "translate(-"+idx*100+"%, 0 )"
 		});
 		$(".icon-wrap").addClass("hide");
 		$(".icon-wrap").eq(idx).removeClass("hide");
+
+		$(".switch-part").addClass("hide");
+		$(".switch-part").eq(idx).removeClass("hide");
 	}
 
 	var bind = function(){
